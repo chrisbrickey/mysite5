@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mysite5</title>
+    <title>chrisbrickey</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= controller.controller_name %>">
+    <div id="banner">
+      <%= image_tag "logo.svg", alt: "chrisbrickey" %>
+      <span class="title"><%= @page_title %></span>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
   </body>
 </html>

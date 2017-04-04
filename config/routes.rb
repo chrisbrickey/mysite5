@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'welcome#projects', as: 'welcome_projects'
+
   get 'welcome/projects'
 
   get 'welcome/processes'
