@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :projects
   root 'welcome#projects', as: 'welcome_projects'
 
   get 'welcome/projects'

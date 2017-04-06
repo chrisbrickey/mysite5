@@ -8,12 +8,15 @@
   </head>
 
   <body class="<%= controller.controller_name %>">
+
     <div id="banner">
-      <%= image_tag "logo.svg", alt: "chrisbrickey" %>
+      <%= "chrisbrickey" %>
       <span class="title"><%= @page_title %></span>
     </div>
+
     <div id="main">
       <%= yield %>
     </div>
+
   </body>
 </html>

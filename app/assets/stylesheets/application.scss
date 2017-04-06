@@ -19,19 +19,23 @@
  #banner {
    position: relative;
    min-height: 40px;
-   background: #9c9;
+   background: #103;
    padding: 15px;
    font: 40px/40px "Arial";
-   color: #282;
+   color: #999;
    text-align: left;
 
    img {
      position: absolute;
      top: 15px;
      left: 0;
-     width: 100000000000000000px;
+     width: 10000000px;
    }
  } //end of #banner
+
+ #cover_photo {
+   position: absolute;
+ }
 
  #notice {
    color: #000 !important;
@@ -42,7 +46,7 @@
    font: bold smaller sans-serif;
  }
 
- #notice:emtpy {
+ #notice:empty {
    display: none
  }
 
