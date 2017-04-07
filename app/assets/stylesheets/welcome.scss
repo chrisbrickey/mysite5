@@ -2,13 +2,70 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 .welcome {
+
+  // no h1 on main page so does not currently format anything
   h1 {
-    margin: 0;
-    padding-bottom: 0.5em;
-    font:  150% sans-serif;
-    color: #226;
-    border-bottom: 3px dotted #77d;
+    margin: 1;
+    text-indent: 15px;
+    // padding-top: 0.5em;
+    font:  200% "Arial";
+    color: #000;
   }
-} //end of .welcome
+
+  h2 {
+    margin: 0;
+    text-indent: 15px;
+    padding-bottom: 0.5em;
+    font:  200% "Arial";
+    color: #000;
+    // border-bottom: 3px dotted #77d;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table tr td {
+    padding: 10px;
+    vertical-align: center;
+  }
+
+  .list_image {
+    width: 180px;
+    height: 140px;
+  }
+
+  .list_description {
+    width: 60%;
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      color:        #000;
+      font-weight:  bold;
+      font-size:    larger;
+    }
+
+    dd {
+      margin: 0;
+    }
+  } //of .list_description
+
+  .list_actions {
+    font-size:  x-small;
+    text-align: right;
+    padding-left: 1em;
+  }
+
+  .list_line_even_for_main_page {
+    background:   rgb(150, 150, 150);
+  }
+
+  .list_line_odd_for_main_page {
+    background:   rgb(200, 200, 200);
+  }
+
+} //of .welcome

@@ -1,21 +1,41 @@
-<h2>good at computers and strategy, likes to build cool stuff</h2>
+<h1>
+  I like to build cool stuff. Here's my <%= link_to "story", welcome_processes_path %>.
+</h1>
 
 <div class="cover_photo">
   <%= image_tag("stars_long_banner.jpg", width: '2000px') %>
 <div>
 
-<p> What's my <%= link_to "story", welcome_processes_path %>? </p>
 <br />
-<h2>Projects</h2>
-<p>--------------------------------------------------------------</p>
-<p>
-  Links to projects coming soon. For now, check out my
+<br />
+<h2>My Projects</h2>
+
+<table>
+<% @projects.each do |project| %>
+  <tr class="<%= cycle('list_line_odd_for_main_page', 'list_line_even_for_main_page') %>">
+
+    <td>
+      <%= image_tag(project.image_url, class: 'list_image') %>
+    </td>
+
+    <td class="list_description">
+      <dl>
+        <dt><%= project.title %></dt>
+        <dd><%= truncate(strip_tags(project.description), length: 300) %></dd>
+      </dl>
+    </td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div>
+  Links to project work coming soon. For now, check out my
   <%= link_to "github", "https://github.com/chrisbrickey" %> and
   <%= link_to "linkedin", "https://www.linkedin.com/in/chrisbrickey" %>.
-</p>
+</div>
 
 <br />
 <br />
-<!-- <p>
- What's my <a href="/welcome/processes">story</a>?
-</p> -->
