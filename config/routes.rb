@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   resources :projects
+
+  #below line added when deploying to heroku per Railbridge instructions
+  root 'drinks#index'
+
   root 'welcome#projects', as: 'welcome_projects'
 
   get 'welcome/projects'
