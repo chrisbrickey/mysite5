@@ -33,9 +33,32 @@
    }
  } //end of #banner
 
- #cover_photo {
-   position: absolute;
+ // #cover_photo {
+ //   position: absolute;
+ // }
+
+ .frontpage {
+   margin-top:    10px;
+   padding:       10px;
+   height:        300px;
+   background-image: image-url("stars_long_banner.jpg");
+   background-size:  cover;
  }
+
+ #ubertext {
+   padding: 10px;
+   font:  Georgia, sans-serif;
+   color: rgb(220, 220, 220);
+   font-size: 22px;
+ }
+
+ #link-to-text {
+   padding: 10px;
+   font:  Georgia, sans-serif;
+   color: rgb(220, 220, 220);
+   font-size: 22px;
+ }
+
 
  #notice {
    color: #000 !important;
