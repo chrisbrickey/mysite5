@@ -1,24 +1,20 @@
-# README
+# mysite5
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Rails app allows me (admin) to populate my project portfolio for viewers.  It will eventually showcase my transition from strategy consulting to software development.
 
-Things you may want to cover:
 
-* Ruby version
+# Setup
 
-* System dependencies
+* Ruby version: 2.4.0p0
+* Rails version: 5.0.2
+* Start server: `bin/rails server`
 
-* Configuration
 
-* Database creation
+# Tests
 
-* Database initialization
+* Run tests: `bin/rails test`
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# Upcoming Features
 
-* Deployment instructions
-
-* ...
+* I use PivotalTracker to manage this project: https://www.pivotaltracker.com/n/projects/1998941
