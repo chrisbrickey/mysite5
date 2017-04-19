@@ -1,6 +1,6 @@
 # mysite5
 
-This is a Rails app allows me (admin) to populate my project portfolio for viewers.  It will eventually showcase my transition from strategy consulting to software development.
+This Rails app allows me (admin) to populate my project portfolio for viewers.  It will eventually showcase my transition from strategy consulting to software development.
 
 
 # Setup
