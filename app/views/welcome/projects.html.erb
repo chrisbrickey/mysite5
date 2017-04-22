@@ -6,49 +6,50 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Yantramanav" >
   </head>
 
+  <body>
+    <div class="container-fluid">
 
-<div class="container-fluid">
+      <div class="frontpage">
+        <a id="ubertext">
+          I like to build cool stuff. Here's my<%= link_to "story.", welcome_processes_path, {:style => 'font-size: 22px; color: rgb(255, 255, 153)' } %>
+        </a>
+      </div>
 
-  <div class="frontpage">
-    <a id="ubertext">
-      I like to build cool stuff. Here's my<%= link_to "story.", welcome_processes_path, {:style => 'font-size: 22px; color: rgb(255, 255, 153)' } %>
-    </a>
-  </div>
+      <br />
+      <br />
+      <h2>My Projects</h2>
 
-  <br />
-  <br />
-  <h2>My Projects</h2>
+      <table>
+      <% @projects.each do |project| %>
+        <tr class="<%= cycle('list_line_odd_for_main_page', 'list_line_even_for_main_page') %>">
 
-  <table>
-  <% @projects.each do |project| %>
-    <tr class="<%= cycle('list_line_odd_for_main_page', 'list_line_even_for_main_page') %>">
+          <td>
+            <%= image_tag(project.image_url, class: 'list_image') %>
+          </td>
 
-      <td>
-        <%= image_tag(project.image_url, class: 'list_image') %>
-      </td>
+          <td class="list_description">
+            <dl>
+              <dt><%= project.title %></dt>
+              <dd><%= truncate(strip_tags(project.description), length: 300) %></dd>
+            </dl>
+          </td>
 
-      <td class="list_description">
-        <dl>
-          <dt><%= project.title %></dt>
-          <dd><%= truncate(strip_tags(project.description), length: 300) %></dd>
-        </dl>
-      </td>
+        </tr>
+      <% end %>
+      </table>
 
-    </tr>
-  <% end %>
-  </table>
+      <br />
 
-  <br />
+      <div>
+        Links to project work coming soon. For now, check out my
+        <%= link_to "github", "https://github.com/chrisbrickey" %> and
+        <%= link_to "linkedin", "https://www.linkedin.com/in/chrisbrickey" %>.
+      </div>
 
-  <div>
-    Links to project work coming soon. For now, check out my
-    <%= link_to "github", "https://github.com/chrisbrickey" %> and
-    <%= link_to "linkedin", "https://www.linkedin.com/in/chrisbrickey" %>.
-  </div>
-
-  <br />
-  <br />
-
+      <br />
+      <br />
+  </body>
 </html>
