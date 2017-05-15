@@ -5,7 +5,9 @@ This Rails app allows me (admin) to populate my project portfolio for viewers.  
 ## Setup
 * Ruby version: 2.4.0p0
 * Rails version: 5.0.2
+* Install dependencies: `bundle install`
 * Start server: `bin/rails server`
+* View on local server: [link](http://localhost:3000)
 
 
 ## Tests
